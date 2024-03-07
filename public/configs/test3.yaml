@@ -1,0 +1,273 @@
+testname: Listening Test
+testId: Listening_Test
+bufferSize: 2048
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: service/write.php
+
+## TEST VERSION 2 DATASET 2
+
+
+pages:
+
+    - type: generic
+      id: first_page
+      name: "Welcome and thank you for participating!"
+      content: >
+              Welcome to this listening test, and thank you for your contribution. <br/>
+              <br/>
+              The test is intended to investigate the perception of rhythmic complexity.<br/>
+              <br/> 
+              <br/>
+
+              Please, take the test in a quiet place, or use your headphones. <br/> <br/>
+              This should take about 15 min. <br />
+
+    - type: generic
+      id: second_page
+      name: How the test works
+      content: >
+              You are going to listen to some rhythmic patterns. <br/>
+              For each of them you will be asked to express a rating about the amount of complexity you perceive. <br/> <br/>
+
+              The patterns will have different grades of complexity. <br/> <br/>
+              Here some examples with varying complexity are reported. <br/> <br/> <br/>
+
+              <audio controls><source src='configs/resources/audio/patterns/dataset_003/page_001/3 - Costante.mp3' type='audio/mp3'></audio><br/>
+              <audio controls><source src='configs/resources/audio/patterns/dataset_003/page_002/13 - Gerarchia.mp3' type='audio/mp3'></audio><br/>
+              <audio controls><source src='configs/resources/audio/patterns/dataset_002/page_003/29 - Random.mp3' type='audio/mp3'></audio><br/>
+              <audio controls><source src='configs/resources/audio/patterns/dataset_001/page_004/19 - Random.mp3' type='audio/mp3'></audio><br/>
+
+
+    
+
+      # PAGE 1 OF RATING
+    - type: likert_multi_stimulus
+      id: Rating_page_1
+      name: Rate Rhythm Complexity (1st of 4)
+      content: For each of the following rhythmic patterns, please rate the amount of complexity you perceive. </br><br/>
+      random: True
+      mustRate: True
+      # mustPlayback: ended
+      stimuli:
+          Rhythm_003_001_01G: configs/resources/audio/patterns/dataset_003/page_001/1 - Gerarchia.mp3 
+          Rhythm_003_001_01H: configs/resources/audio/patterns/dataset_003/page_001/1 - Human.mp3
+          Rhythm_003_001_02R: configs/resources/audio/patterns/dataset_003/page_001/2 - Random.mp3
+          Rhythm_003_001_03C: configs/resources/audio/patterns/dataset_003/page_001/3 - Costante.mp3
+          Rhythm_003_001_03R: configs/resources/audio/patterns/dataset_003/page_001/3 - Random.mp3
+          Rhythm_003_001_05G: configs/resources/audio/patterns/dataset_003/page_001/5 - Gerarchia.mp3
+          Rhythm_003_001_09G: configs/resources/audio/patterns/dataset_003/page_001/9 - Gerarchia.mp3
+          Rhythm_003_001_09H: configs/resources/audio/patterns/dataset_003/page_001/9 - Human.mp3
+          Rhythm_003_001_09R: configs/resources/audio/patterns/dataset_003/page_001/9 - Random.mp3
+          Rhythm_003_001_13C: configs/resources/audio/patterns/dataset_003/page_001/13 - Costante.mp3
+          
+      response:
+        - value: Very low
+          label: Very low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Low 
+          label: Low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Medium 
+          label: Medium 
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: High
+          label: High
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+        - value: Very high
+          label: Very high
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+
+  
+      # PAGE 2 OF RATINGS
+    - type: likert_multi_stimulus
+      id: Rating_page_2
+      name: Rate Rhythm Complexity (2nd of 4)
+      content: For each of the following rhythmic patterns, please rate the amount of complexity you perceive. </br><br/>
+      random: True
+      mustRate: True
+      # mustPlayback: ended
+      stimuli:
+          Rhythm_003_002_01C: configs/resources/audio/patterns/dataset_003/page_002/1 - Costante.mp3
+          Rhythm_003_002_02G: configs/resources/audio/patterns/dataset_003/page_002/2 - Gerarchia.mp3
+          Rhythm_003_002_02H: configs/resources/audio/patterns/dataset_003/page_002/2 - Human.mp3
+          Rhythm_003_002_13G: configs/resources/audio/patterns/dataset_003/page_002/13 - Gerarchia.mp3
+          Rhythm_003_002_13R: configs/resources/audio/patterns/dataset_003/page_002/13 - Random.mp3
+          Rhythm_003_002_15H: configs/resources/audio/patterns/dataset_003/page_002/15 - Human.mp3
+          Rhythm_003_002_15R: configs/resources/audio/patterns/dataset_003/page_002/15 - Random.mp3
+          Rhythm_003_002_17R: configs/resources/audio/patterns/dataset_003/page_002/17 - Random.mp3
+          Rhythm_003_002_22H: configs/resources/audio/patterns/dataset_003/page_002/22 - Human.mp3
+          Rhythm_003_002_27H: configs/resources/audio/patterns/dataset_003/page_002/27 - Human.mp3
+          
+      response:
+        - value: Very low
+          label: Very low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Low 
+          label: Low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Medium 
+          label: Medium 
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: High
+          label: High
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+        - value: Very high
+          label: Very high
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+
+
+
+      # PAGE 3 OF RATINGS
+    - type: likert_multi_stimulus
+      id: Rating_page_3
+      name: Rate Rhythm Complexity (3rd of 4)
+      content: For each of the following rhythmic patterns, please rate the amount of complexity you perceive. </br><br/>
+      random: True
+      mustRate: True
+      # mustPlayback: ended
+      stimuli:
+          Rhythm_003_003_01R: configs/resources/audio/patterns/dataset_003/page_003/1 - Random.mp3
+          Rhythm_003_003_02C: configs/resources/audio/patterns/dataset_003/page_003/2 - Costante.mp3
+          Rhythm_003_003_03H: configs/resources/audio/patterns/dataset_003/page_003/3 - Human.mp3
+          Rhythm_003_003_13H: configs/resources/audio/patterns/dataset_003/page_003/13 - Human.mp3
+          Rhythm_003_003_15C: configs/resources/audio/patterns/dataset_003/page_003/15 - Costante.mp3
+          Rhythm_003_003_15G: configs/resources/audio/patterns/dataset_003/page_003/15 - Gerarchia.mp3
+          Rhythm_003_003_22C: configs/resources/audio/patterns/dataset_003/page_003/22 - Costante.mp3
+          Rhythm_003_003_27C: configs/resources/audio/patterns/dataset_003/page_003/27 - Costante.mp3
+          Rhythm_003_003_27G: configs/resources/audio/patterns/dataset_003/page_003/27 - Gerarchia.mp3
+          Rhythm_003_003_27R: configs/resources/audio/patterns/dataset_003/page_003/27 - Random.mp3
+          
+      response:
+        - value: Very low
+          label: Very low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Low 
+          label: Low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Medium 
+          label: Medium 
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: High
+          label: High
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+        - value: Very high
+          label: Very high
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+         
+
+  
+      # PAGE 4 OF RATINGS
+    - type: likert_multi_stimulus
+      id: Rating_page_4
+      name: Rate Rhythm Complexity (4th of 4)
+      content: For each of the following rhythmic patterns, please rate the amount of complexity you perceive. </br><br/>
+      random: True
+      mustRate: True
+      # mustPlayback: ended
+      stimuli:
+          Rhythm_003_004_03G: configs/resources/audio/patterns/dataset_003/page_004/3 - Gerarchia.mp3
+          Rhythm_003_004_05C: configs/resources/audio/patterns/dataset_003/page_004/5 - Costante.mp3
+          Rhythm_003_004_05H: configs/resources/audio/patterns/dataset_003/page_004/5 - Human.mp3
+          Rhythm_003_004_05R: configs/resources/audio/patterns/dataset_003/page_004/5 - Random.mp3
+          Rhythm_003_004_09C: configs/resources/audio/patterns/dataset_003/page_004/9 - Costante.mp3
+          Rhythm_003_004_17C: configs/resources/audio/patterns/dataset_003/page_004/17 - Costante.mp3
+          Rhythm_003_004_17G: configs/resources/audio/patterns/dataset_003/page_004/17 - Gerarchia.mp3
+          Rhythm_003_004_17H: configs/resources/audio/patterns/dataset_003/page_004/17 - Human.mp3
+          Rhythm_003_004_22G: configs/resources/audio/patterns/dataset_003/page_004/22 - Gerarchia.mp3
+          Rhythm_003_004_22R: configs/resources/audio/patterns/dataset_003/page_004/22 - Random.mp3
+          
+      response:
+        - value: Very low
+          label: Very low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Low 
+          label: Low
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: Medium 
+          label: Medium 
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: High
+          label: High
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+        - value: Very high
+          label: Very high
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png  
+         
+
+    - type: finish
+      name: Thank you
+      content: Thank you for attending! <br/> <br/> Please insert your personal data to complete the test. <br/> <br/> <br/>
+      popupContent: Your results were sent. Goodbye!
+      showResults: false
+      writeResults: true
+      questionnaire:
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: other
+               label: Other
+          - type: number 
+            label: Years of formal musical training
+            name: years_training
+            min: 0
+            max: 100
+            default: 5
+          - type: text
+            label: Country
+            name: country
+          - type: long_text
+            label: Feedback
+            name: feedback
+            optional: true
